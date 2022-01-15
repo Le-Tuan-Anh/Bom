@@ -1,0 +1,69 @@
+.button {
+    -fx-background-color: #58e332;
+    -fx-border-style:  solid;
+}
+
+.button:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #4652e3;
+}
+
+.label {
+    -fx-font-size: 25;
+    -fx-font-family: "Yu Gothic Medium";
+}
+
+.text-fill1 {
+    -fx-text-fill: #fff;
+    -fx-font-size: 14;
+}
+
+.text-fill2 {
+    -fx-text-fill: #fff;
+    -fx-font-size: 14;
+}
+
+.text-fill3 {
+     -fx-text-fill: #fff;
+     -fx-font-size: 14;
+ }
+
+.text-fill4 {
+    -fx-text-fill: #fff;
+    -fx-font-size: 14;
+}
+
+.text-fill5 {
+    -fx-text-fill: #fff;
+    -fx-font-size: 14;
+}
+
+.text-fill6 {
+    -fx-text-fill: #fff;
+    -fx-font-size: 19;
+}
+
+.back-to-menu-button:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #4652e3;
+}
+
+.name {
+    -fx-text-fill: #3b4dec;
+    -fx-font-size: 30;
+}
+
+.help {
+    -fx-text-fill: #3b4dec;
+    -fx-font-size: 35;
+}
+
+.point {
+    -fx-text-fill: #014ee1;
+    -fx-font-size: 35;
+}
+
+.map {
+    -fx-text-fill: #014ee1;
+    -fx-font-size: 30;
+}

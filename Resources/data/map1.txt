@@ -1,0 +1,22 @@
+wwwwwwwwwwwwwwwwwwww
+w-----b-b-b-b-b-b--w
+w-w-w-w-w-w-w-w-wbww
+w-b-b-b-b-b-b-b-b--w
+wb---b-------b--wbww
+w-b---------b---b--w
+wb----b-----b--bw-ww
+w-b---------b---b--w
+w-w--b-------b--w-ww
+w-wbw-bwbwbwb-wbw--w
+wb-b-b-------b-b-b-w
+wwwwwwwwwwwwwwwwwwww
+18 1
+15 1
+15 8
+9 6
+1 9
+5 5
+7 1
+17 7
+13 3
+8 10
