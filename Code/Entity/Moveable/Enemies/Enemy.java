@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import Code.Entity.Entity;
 import Code.Entity.Moveable.Moveable;
-import edu.princeton.cs.algs4.StdRandom;
 
 public abstract class Enemy extends Moveable {
     protected final int RIGHT = 0, UP = 1, LEFT = 2, DOWN = 3;

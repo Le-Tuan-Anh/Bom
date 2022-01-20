@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
@@ -24,8 +25,6 @@ import Code.Entity.Non_moveable.Items.increaseRange;
 import Code.Entity.Non_moveable.Items.speedUp;
 import Code.Entity.ShortLife.Bom;
 import Code.Entity.ShortLife.Fire;
-import edu.princeton.cs.algs4.SET;
-import edu.princeton.cs.algs4.StdRandom;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.EventHandler;
@@ -351,12 +350,12 @@ public class Game {
         ImageView bronze = newImageView(new Image("Resources/icons/bronzeMedal.png"), 35, 20, 455, 150);
         
         ObservableList<Object> c = FXCollections.observableArrayList();
-        SET<Integer> copy = new SET<>();
-        for (int i: listScore)
-            copy.add(i);
+        ArrayList<Integer> copy = new ArrayList<>();
+        copy.addAll(listScore);
         for (int i = 0; i < 3 && i < copy.size(); i++) {
-            c.add(copy.max());
-            copy.delete(copy.max());
+            int max = Collections.max(copy);
+            c.add(max);
+            copy.remove(max);
         }
         highestScore.setItems(c);
 
