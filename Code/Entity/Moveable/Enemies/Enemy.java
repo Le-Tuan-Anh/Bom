@@ -7,7 +7,7 @@ import Code.Entity.Moveable.Moveable;
 
 public abstract class Enemy extends Moveable {
     protected final int RIGHT = 0, UP = 1, LEFT = 2, DOWN = 3;
-    protected int currentDirection = StdRandom.uniform(4);
+    protected int currentDirection = (int) Math.round(Math.random() * 3);
 
     public Enemy(int x, int y) {
         super(x, y);
@@ -70,6 +70,6 @@ public abstract class Enemy extends Moveable {
         if (canMoveLeft(map))   ls.add(LEFT);
         if (canMoveDown(map))   ls.add(DOWN);
 
-        currentDirection = ls.get(StdRandom.uniform(ls.size()));
+        currentDirection = ls.get((int) Math.round(Math.random() * (ls.size()-1)));
     }
 }

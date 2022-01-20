@@ -648,10 +648,10 @@ public class Game {
     }
 
     private Entity brickDestroyed(int i, int j) {
-        if (StdRandom.uniform(250) > 24) {
+        if ((int) Math.round(Math.random() * 250) > 24) {
             return new Fire(j*CELLS_SIZE, i*CELLS_SIZE);
         } else {
-            int rand = StdRandom.uniform(3);
+            int rand = (int) Math.round(Math.random() * 2);
             switch (rand) {
                 case 1:
                     return new bonusHealth(j*CELLS_SIZE, i*CELLS_SIZE);
@@ -740,21 +740,21 @@ public class Game {
     }
 
     private void createEnemy(int x, int y) {
-        switch (StdRandom.uniform(5)) {
+        switch ((int) Math.round(Math.random() * 5)) {
             case 1:
-                enemies.add(new Balloom(x, y, StdRandom.uniform(3) + 1));
+                enemies.add(new Balloom(x, y, (int) Math.round(Math.random() * 3) + 1));
                 break;
             case 2:
-                enemies.add(new Doll(x, y, StdRandom.uniform(3) + 1));
+                enemies.add(new Doll(x, y, (int) Math.round(Math.random() * 3) + 1));
                 break;
             case 3:
-                enemies.add(new Kondoria(x, y, StdRandom.uniform(3) + 1));
+                enemies.add(new Kondoria(x, y, (int) Math.round(Math.random() * 3) + 1));
                 break;
             case 4:
-                enemies.add(new Minvo(x, y, StdRandom.uniform(3) + 1));
+                enemies.add(new Minvo(x, y, (int) Math.round(Math.random() * 3) + 1));
                 break;
             default:
-                enemies.add(new Oneal(x, y, StdRandom.uniform(3) + 1));
+                enemies.add(new Oneal(x, y, (int) Math.round(Math.random() * 3) + 1));
                 break;
         }
     }
