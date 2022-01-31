@@ -84,7 +84,6 @@ public class Game {
                 o.notify();
             }
         }
-
     }
 
     /** main loop */
@@ -355,7 +354,9 @@ public class Game {
         for (int i = 0; i < 3 && i < copy.size(); i++) {
             int max = Collections.max(copy);
             c.add(max);
-            copy.remove(max);
+            int indexMax;
+            while ((indexMax = copy.indexOf(max)) != -1)
+                copy.remove(indexMax);
         }
         highestScore.setItems(c);
 
